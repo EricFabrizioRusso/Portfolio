@@ -1,0 +1,52 @@
+*{
+
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+    font-size: 18px;
+    
+}
+
+::selection{
+
+    background-color: var(--main-color);
+    
+
+}
+
+
+.index{
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    max-width: 1200px;
+    
+    gap: .5em;
+  
+
+
+
+}
+
+@media screen and (max-width: 390) {
+
+    html{
+
+        font-size: 12px;
+
+    }
+    
+}
+
+

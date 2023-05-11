@@ -1,0 +1,265 @@
+.About{
+
+   display: grid;
+   grid-template-areas: "title title title"
+                        "btn stack stack"
+                        "btn tools tools";
+
+
+
+
+
+}
+
+.About__Title{
+
+    grid-area: title;
+    position: relative;
+	margin: 2em.5em;
+    
+
+
+}
+
+.About__logo{
+
+    width: 70%;
+    opacity: 0.80;
+    transition: all .3s ease-in-out;
+
+}
+
+.About__logo:hover{
+
+    opacity: 1;
+    transform: scale(1.5);
+
+
+}
+
+
+.About__Title::after{
+
+	position: absolute;
+	content: "";
+	width: 10px;
+	top: 80%;
+	height: .1em;
+	background: #404040;
+	width: 60%;
+	margin: 0 5%;
+    right: 0;
+	border-radius: 2px;
+	
+
+}
+
+
+.MyStack{
+
+    grid-area: stack;
+    background: var( --sections-bg-color);
+    border-radius: .5em;
+    padding: 0 2em;
+    margin: 0 2em;
+    
+
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.74);
+
+
+    
+}
+
+
+
+
+
+.MyStack__Container{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 2em;
+
+
+}
+.MyStack__Desc{
+
+    margin: 1em;
+
+
+}
+
+
+
+
+.Tools{
+
+    grid-area: tools;
+    border-radius: .5em;
+    background: var( --sections-bg-color);
+    padding: 0 2em;
+    margin: 0 2em;
+
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.74);
+    display: none;
+
+
+
+}
+
+.Tools__Desc{
+
+    margin: 1em;
+
+
+}
+
+
+
+
+.Tools__Container{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 2em;
+
+
+
+}
+
+
+.MyStack_display{
+
+    
+    opacity: 1;
+    display: block;
+    
+
+
+}
+
+.Btn{
+
+    grid-area: btn;
+    /* background: rebeccapurple; */
+
+    
+   
+
+}
+.Btn__Sections{
+
+ 
+    width: 10rem;
+}
+
+.Btn__Sections__Section{
+
+ 
+    background: none;
+    padding: 1em 2em;
+    color: #fff;
+    width: 100%;
+
+    border: none;
+    border-left: .5em solid var( --sections-bg-color);
+    display: flex;
+    justify-content: start;
+    transition: all .1s ease-in-out;
+    padding: 2em;
+   
+ 
+}
+
+.Btn__Sections__Section:hover{
+
+
+    border-left: .5em solid var(--main-color);
+    background: var(--sections-bg-color);
+
+}
+
+
+@media screen  and (max-width: 700px){
+
+    .About{
+
+        display: grid;
+        grid-template-areas: "title"
+                             "btn"
+                             "stack" 
+                             "tools";
+     
+     
+     
+     
+     
+    }
+
+
+
+    .About__Title::after{
+
+        position: absolute;
+        content: "";
+        width: 10px;
+        top: 80%;
+        height: .1em;
+        background: #404040;
+        width: 40%;
+        margin: 0 5%;
+        right: 0;
+        border-radius: 2px;
+        
+    
+    }
+
+
+    .About__logo{
+
+        width: 120%;
+        opacity: 0.80;
+        transition: all .3s ease-in-out;
+    
+    }
+
+
+    .MyStack{
+
+        grid-area: stack;
+        background: var( --sections-bg-color);
+        border-radius: .5em;
+        padding: 0 2em;
+        margin: 1em 1em;
+        
+        transition: all .3s ease-in-out;
+        box-shadow: 0 1em 2em rgba(0, 0, 0, 0.74);
+    
+       
+    
+    
+    }
+   
+    
+    .Tools{
+
+        grid-area: tools;
+        border-radius: .5em;
+        background: var( --sections-bg-color);
+        padding: 0 2em;
+        margin: 1em 1em;
+
+        transition: all .3s ease-in-out;
+        box-shadow: 0 1em 2em rgba(0, 0, 0, 0.74);
+       
+
+
+    }
+
+  
+
+    
+}
+

@@ -11,10 +11,10 @@ const Header = () => {
             <p className={hstyles.Header__Desc}>I have a passion for writing clean and concise code that,
              in conjuction with a good understanding of web design principles,
             allows me to create work with creativity and improving my skills. </p>
+          <div className={hstyles.Header__Box_image}>
+              <img className='Header__image' src="" alt="My-Photo" />
+          </div>
   
-        </div>
-        <div className="Header__Box-image">
-            <img className='Header__image' src="" alt="My-Photo" />
         </div>
         <div className={hstyles.Social}>
             <a className={hstyles.Resume} href={ResumeLink} download >Resume

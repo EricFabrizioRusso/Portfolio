@@ -6,29 +6,45 @@
     flex-direction: column;
     text-align: center;
     gap: 2rem;
+    margin-top: 5%;
 
 
+}
+
+.Header__Info{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "name image"
+                         "desc image";
+    
+    
 }
 
 .Header__Name{
 
     margin: 1em;
+    grid-area: name;
 
 }
 
-.Header__Info{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-
-}
 
 .Header__Desc{
 
    
     margin: 2em;
+    grid-area: desc;
+
+}
+
+.Header__Box_image{
+
+    grid-area: image;
+    background: linear-gradient( white, blue);
+	width: 250px;
+	height: 250px;
+    margin: auto;
+
 
 }
 

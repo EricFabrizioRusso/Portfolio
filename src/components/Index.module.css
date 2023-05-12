@@ -26,7 +26,6 @@ html{
 
 .index{
 
-
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;

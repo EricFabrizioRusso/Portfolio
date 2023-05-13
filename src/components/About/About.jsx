@@ -4,27 +4,33 @@ import NavBarAbout from './NavBarAbout';
 import Tools from './Tools';
 import AboutStyles from './About.module.css'
 import {LOGOS} from '../../helpers';
+
+  
+const SECTIONS_TYPES={
+
+  STACK: "MyStack-btn",
   
 
+  TOOLS:"MyStack-btn"
+
+}
 
 
+const languges=[
 
-
-  const languges=[
-
-    <img src={LOGOS.Html} className={AboutStyles.About__logo} alt="Html" />,
-    <img src={LOGOS.Css} className={AboutStyles.About__logo} alt="CSS" />,
-    <img src={LOGOS.JavaScript} className={AboutStyles.About__logo} alt="JS" />,
-    <img src={LOGOS.ReactJS} className={AboutStyles.About__logo} alt="ReactJS" />,
+  <img src={LOGOS.Html} className={AboutStyles.About__logo} alt="Html" />,
+  <img src={LOGOS.Css} className={AboutStyles.About__logo} alt="CSS" />,
+  <img src={LOGOS.JavaScript} className={AboutStyles.About__logo} alt="JS" />,
+  <img src={LOGOS.ReactJS} className={AboutStyles.About__logo} alt="ReactJS" />,
 
 
     
 
 
-  ]
+]
 
 
-  document.addEventListener("click", (e)=>{
+  /*document.addEventListener("click", (e)=>{
 
 
     if(e.target.id === "MyStack-btn"){
@@ -49,17 +55,7 @@ import {LOGOS} from '../../helpers';
     }
   
   
-   })
-
-
-
-
-  const btn=[
-   <button className={AboutStyles.Btn__Sections__Section} id='MyStack-btn'>My Stack</button>,
-   <button className={AboutStyles.Btn__Sections__Section} id='Tools-btn'  >Tools</button>
-  ]
-
-  
+   })*/
 
 
   const tools=[
@@ -72,7 +68,62 @@ import {LOGOS} from '../../helpers';
 
 const About = () => {
 
-  const [Section, setSection] = useState("");
+
+ const [Section, setSection] = useState(SECTIONS_TYPES.STACK);
+
+
+
+  const handleStack=()=>{
+
+
+    const $stack= document.getElementById('MyStack');
+    const $tools= document.getElementById('Tools');
+
+    if(Section === SECTIONS_TYPES.STACK){
+  
+  
+     $stack.style.display= 'block';
+     $tools.style.display= 'none';
+     //console.log(stack)
+     return
+    
+  
+   }
+
+
+
+  }
+
+  const handleTools=()=>{
+
+
+    const $stack= document.getElementById('MyStack');
+    const $tools= document.getElementById('Tools');
+
+    if(Section === SECTIONS_TYPES.TOOLS){
+
+   
+  
+      $tools.style.display= 'block';
+      $stack.style.display= 'none';
+      //console.log("Tools")
+      return
+   
+  
+  
+    }
+
+
+
+  }
+
+ 
+  const btn=[
+    <button className={AboutStyles.Btn__Sections__Section} onClick={()=>  handleStack()} id='MyStack-btn'>My Stack</button>,
+    <button className={AboutStyles.Btn__Sections__Section} onClick={()=>  handleTools()} id='Tools-btn'  >Tools</button>
+  ]
+
+
 
   return (
       <div className={AboutStyles.About} id='About_Me'>
@@ -87,15 +138,19 @@ const About = () => {
 
         </div>
         <div className={`${AboutStyles.MyStack} ${AboutStyles.MyStack_active}`} id='MyStack'>
+      
             <p className={AboutStyles.MyStack__Desc}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit iusto quasi reiciendis
+            {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit iusto quasi reiciendis
             ea minus, reprehenderit nesciunt eos maxime modi nostrum esse deserunt quam libero
-            voluptas voluptate nobis ipsam ad cum.
+            voluptas voluptate nobis ipsam ad cum. */}
+            A long the way i started to learning markup and style languages
+            
             </p>
             <div className={AboutStyles.MyStack__Container}>
 
                 {
-                  
+
+            
 
                   languges.map((el,index)=>
                   
@@ -104,12 +159,14 @@ const About = () => {
                       <MyStack key={index} stack={el}/>
                   
                   )
+
                 }
             </div>
 
         </div>
 
         <div className={AboutStyles.Tools} id='Tools'>
+      
             <p className={AboutStyles.Tools__Desc}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit iusto quasi reiciendis
               ea minus, reprehenderit nesciunt eos maxime modi nostrum esse deserunt quam libero
@@ -131,6 +188,20 @@ const About = () => {
 
     </div>
   )
+
+
+  
+
+
+              
+
+
+
 }
 
 export default About;
+
+
+
+
+

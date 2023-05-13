@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import hstyles from "./Header.module.css";
 import ResumeLink from "/127.0.0.1_5500_Resume.html.pdf"
 import { ICONS } from '../../helpers';
@@ -7,16 +7,30 @@ const Header = () => {
 
 
   
+  
+  const handleStart=()=>{
+    
+    const $name = document.getElementById('name');
+    const $desc = document.getElementById('desc');
+    const $image = document.getElementById('image');
+    $name.classList.add(`${hstyles.Header__Name_active}`)
+    $desc.classList.add(`${hstyles.Header__Name_active}`)
+    $image.classList.add(`${hstyles.Header__Image_active}`)
+    console.log($name)
+    console.log("incio")
+    
+  }
 
+  
 
   return (
-    <div className={hstyles.Header} id='Home'>
+    <div className={hstyles.Header} id='Home' onLoad={()=> handleStart()} >
         <div className={hstyles.Header__Info}>
-            <h1 className={hstyles.Header__Name}>I'm Eric, Frontend Developer</h1>
-            <p className={hstyles.Header__Desc}>I have a passion for writing clean and concise code that,
+            <h1 className={hstyles.Header__Name} id='name'>I'm Eric, Frontend Developer</h1>
+            <p className={hstyles.Header__Desc} id='desc'>I have a passion for writing clean and concise code that,
              in conjuction with a good understanding of web design principles,
             allows me to create work with creativity and improving my skills. </p>
-          <div className={hstyles.Header__Box_image}>
+          <div className={hstyles.Header__Box_image} id='image'>
               <img className='Header__image' src="" alt="My-Photo" />
           </div>
   
@@ -35,8 +49,6 @@ const Header = () => {
             <img className={hstyles.Icon} src={ICONS.Artstation} alt="Arstation" loading='lazy'/>
             </a>
         </div>
-        
-    
     </div>
   )
 }

@@ -8,8 +8,8 @@ const Contact = () => {
         using my social links on the top of the page, or fill in this form that
         I've built and I will get back at you as soon as possible.</p>
         <form className={ContactStyles.Contact__form} method='form'>
-            <label className={ContactStyles.form__label} htmlFor="name">Name</label>
-            <input className={ContactStyles.form__input} type="text" id='name' name='name' placeholder="John Doe" autoComplete='Unknown'/>
+            <label className={ContactStyles.form__label} htmlFor='Name'>Name</label>
+            <input className={ContactStyles.form__input} type="text" id='Name' name='name' placeholder="John Doe" autoComplete='Unknown'/>
             <label className={ContactStyles.form__label} htmlFor="email">E-mail</label>
             <input className={ContactStyles.form__input}  type="email" id='email' name='email' placeholder="john@company.com" autoComplete='Unknown'/>
             <label className={ContactStyles.form__label} htmlFor="subject">Subject</label>

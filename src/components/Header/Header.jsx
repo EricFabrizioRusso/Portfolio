@@ -4,6 +4,11 @@ import ResumeLink from "/127.0.0.1_5500_Resume.html.pdf"
 import { ICONS } from '../../helpers';
 
 const Header = () => {
+
+
+  
+
+
   return (
     <div className={hstyles.Header} id='Home'>
         <div className={hstyles.Header__Info}>

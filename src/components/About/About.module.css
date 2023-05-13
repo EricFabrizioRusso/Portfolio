@@ -62,6 +62,7 @@
     border-radius: .5em;
     padding: 0 2em;
     margin: 0 2em;
+
     
 
     box-shadow: 0 1em 2em rgba(0, 0, 0, 0.74);
@@ -87,6 +88,8 @@
 
     margin: 1em;
 
+    
+
 
 }
 
@@ -100,6 +103,7 @@
     background: var( --sections-bg-color);
     padding: 0 2em;
     margin: 0 2em;
+ 
 
     box-shadow: 0 1em 2em rgba(0, 0, 0, 0.74);
     display: none;
@@ -111,7 +115,7 @@
 .Tools__Desc{
 
     margin: 1em;
-
+   
 
 }
 
@@ -180,6 +184,8 @@
     background: var(--sections-bg-color);
 
 }
+
+
 
 
 @media screen  and (max-width: 700px){
@@ -258,7 +264,6 @@
 
     }
 
-  
 
     
 }

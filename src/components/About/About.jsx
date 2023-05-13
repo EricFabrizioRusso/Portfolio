@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import MyStack from './MyStack';
 import NavBarAbout from './NavBarAbout';
 import Tools from './Tools';
@@ -69,9 +68,7 @@ const languges=[
 const About = () => {
 
 
- const [Section, setSection] = useState(SECTIONS_TYPES.STACK);
-
-
+ const Section=SECTIONS_TYPES.STACK;
 
   const handleStack=()=>{
 

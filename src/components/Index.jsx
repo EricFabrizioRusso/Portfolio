@@ -20,7 +20,7 @@ const Index = () => {
 
   return (
     <div className={styles.index} id='index' onLoad={() =>handleOpacity()}>
-         <Header/> 
+        <Header/>
         <NavBar/>
         <About/>  
         <Projects/>

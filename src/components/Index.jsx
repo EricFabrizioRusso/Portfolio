@@ -8,8 +8,18 @@ import Footer from './Footer/Footer'
 import NavBar from './NavBar/NavBar'
 
 const Index = () => {
+
+  const handleOpacity=()=>{
+
+    const $index= document.getElementById('index')
+    $index.classList.add(`${styles.index_active}`);
+
+
+  }
+
+
   return (
-    <div className={styles.index}>
+    <div className={styles.index} id='index' onLoad={() =>handleOpacity()}>
          <Header/> 
         <NavBar/>
         <About/>  

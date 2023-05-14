@@ -6,25 +6,10 @@ import { ICONS } from '../../helpers';
 const Header = () => {
 
 
-  
-  
-  const handleStart=()=>{
-    
-    const $name = document.getElementById('name');
-    const $desc = document.getElementById('desc');
-    const $image = document.getElementById('image');
-    $name.classList.add(`${hstyles.Header__Name_active}`)
-    $desc.classList.add(`${hstyles.Header__Name_active}`)
-    $image.classList.add(`${hstyles.Header__Image_active}`)
-    console.log($name)
-    console.log("incio")
-    
-  }
 
-  
 
   return (
-    <div className={hstyles.Header} id='Home' onLoad={()=> handleStart()} >
+    <div className={hstyles.Header} id='Home'>
         <div className={hstyles.Header__Info}>
             <h1 className={hstyles.Header__Name} id='name'>I'm Eric, Frontend Developer</h1>
             <p className={hstyles.Header__Desc} id='desc'>I have a passion for writing clean and concise code that,

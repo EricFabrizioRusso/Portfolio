@@ -32,9 +32,16 @@ html{
     max-width: 1200px;
     
     gap: .5em;
-  
+    opacity: 0;
+    transition: all 1s ease-in-out;
 
 
+
+}
+
+.index_active{
+
+    opacity: 1;
 
 }
 

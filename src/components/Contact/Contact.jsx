@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ContactStyles from './Contact.module.css'
+import Message from '../Message';
 
 const initialForm= {
 
@@ -24,43 +25,44 @@ const initialForm= {
 const Contact = () => {
 
   const [form, setForm] = useState(initialForm);
+  const [Loading, setLoading] = useState(false);
+  const [response, setResponse] = useState(false);
+  const [error, setError] = useState(false);
 
  const handleSubmit= async (e)=>{
 
+  e.preventDefault();
   console.log("entra funcion")
   try{
 
-    console.log("entra al try")
-    const response= await fetch("https://formsubmit.co/ajax/erickfernusg1@gmail.com",{
-  
-      headers: {
-
-        'Access-Control-Allow-Origin': '*',
-  
-        "Content-Type": "application/json",
-        Accept: "application/json",
-  
-      },
+   const res= await fetch("https://formsubmit.co/ajax/erickfernusg1@gmail.com", {
       method: "POST",
-  
-      body: JSON.stringify(form),
+      headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: JSON.stringify(form)
 
-  
-  
-    })
+  })
+    setLoading(true);
+    let json= await res.json();
+    setLoading(false)
+    setResponse(true);
+    setForm(initialForm);
+    setTimeout(() => {
 
+      setResponse(false)
+    }, 5000);
+    console.log(json);
 
-
-    const json= await response.json(); 
-    console.log(json)
-
-    setForm(initialForm)
-
-  
 
   }catch(err){
 
+    setError(true)
+    setTimeout(() => {
 
+      setError(false)
+    }, 5000);
     console.log(err.message);
 
   }
@@ -96,7 +98,11 @@ const Contact = () => {
             <label className={ContactStyles.form__label} htmlFor="message">Message</label>
             <textarea className={ContactStyles.form__textarea} id='message' name="message" cols="30" rows="10" placeholder="Hi! I'm John Doe from Company and we want to work with you." onChange={handleChange} required value={form.message}></textarea>
             <input className={ContactStyles.form__btn} type="submit" value="Send"/>
+           
         </form>
+        {Loading && <h1>Cargando ...</h1>}
+        {response && (<Message msg="Los Datos han sido enviados" bgColor="#198754"/>)}
+        {error && (<Message msg="Ha ocurrido un error" bgColor="#BD3428" />)}
     </div>
   )
 }

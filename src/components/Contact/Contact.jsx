@@ -33,19 +33,24 @@ const Contact = () => {
     console.log("entra al try")
     const response= await fetch("https://formsubmit.co/ajax/erickfernusg1@gmail.com",{
   
-      method: "POST",
-  
-      body: form,
-  
       headers: {
+
+        'Access-Control-Allow-Origin': '*',
   
         "Content-Type": "application/json",
         Accept: "application/json",
   
       },
+      method: "POST",
+  
+      body: JSON.stringify(form),
+
   
   
     })
+
+
+
     const json= await response.json(); 
     console.log(json)
 

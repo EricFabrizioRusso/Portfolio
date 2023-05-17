@@ -26,6 +26,7 @@ const Index = () => {
         <Projects/>
         <Contact/>
         <Footer/>
+     
     </div>
   )
 }

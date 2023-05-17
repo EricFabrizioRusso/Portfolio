@@ -4,8 +4,9 @@ const Message = ({ msg, bgColor }) => {
   let styles = {
     padding: "1rem",
     marginBottom: "1rem",
-    margin: "0 6em",
+    margin: "1em 6em",
     textAlign: "center",
+    borderRadius:".1em",
     color: "#fff",
     fontWeight: "bold",
     backgroundColor: bgColor,

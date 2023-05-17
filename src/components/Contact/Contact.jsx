@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ContactStyles from './Contact.module.css'
 import Message from '../Message';
+import Loader from '../Loader/Loader';
 
 const initialForm= {
 
@@ -31,8 +32,8 @@ const Contact = () => {
 
  const handleSubmit= async (e)=>{
 
-  e.preventDefault();
-  console.log("entra funcion")
+   e.preventDefault();
+   setLoading(true);
   try{
 
    const res= await fetch("https://formsubmit.co/ajax/erickfernusg1@gmail.com", {
@@ -44,7 +45,7 @@ const Contact = () => {
       body: JSON.stringify(form)
 
   })
-    setLoading(true);
+   
     let json= await res.json();
     setLoading(false)
     setResponse(true);
@@ -100,9 +101,10 @@ const Contact = () => {
             <input className={ContactStyles.form__btn} type="submit" value="Send"/>
            
         </form>
-        {Loading && <h1>Cargando ...</h1>}
-        {response && (<Message msg="Los Datos han sido enviados" bgColor="#198754"/>)}
-        {error && (<Message msg="Ha ocurrido un error" bgColor="#BD3428" />)}
+        {Loading && <Loader/>}
+        {response && (<Message msg="The form was submitted successfully" bgColor="#198754"/>)}
+        {error && (<Message msg="An error has occurred" bgColor="#BD3428" />)}
+        
     </div>
   )
 }

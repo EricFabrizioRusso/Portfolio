@@ -1,3 +1,3 @@
 # Web Developer
 
-My portfolio web create with React JS
+My portfolio web created with React JS

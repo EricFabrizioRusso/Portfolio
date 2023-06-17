@@ -43,7 +43,7 @@
 .ProjectSection__Project{
 
 	position: relative;
-	display: inline-block;
+	 display: inline-block; 
 	color: #fff;
 	width: 300px;
 	height: 300px;
@@ -56,6 +56,8 @@
 
 }
 
+
+
 .ProjectSection__Img{
 
 	position: absolute;
@@ -64,8 +66,11 @@
 	height: 100%;
 	opacity: 1;
 	z-index: 1;
-
+	object-fit: cover;
+	transform: scale(2);
+	filter: blur(.2px);
 	transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+	
 
 
 }
@@ -75,7 +80,8 @@
 
 	margin: .5em;
 	position: absolute;
-	right: 100%;
+	/* right: 100%; */
+	transform: translateX(-120%);
 	z-index: 2;
 
 	transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1) ;
@@ -87,23 +93,58 @@
 
 	position: absolute;
 	margin: .5em;
-	top: 100%;
 	z-index: 2;
-	
+	/* top: 100%; */
+	transform: translateY(800%);
 	transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1) ;
 
 }
 
+.ProjectSection__links{
+
+	position: relative;
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+	top: -4em;
+
+
+}
+
+.links__repo{
+
+	color: #fff;
+	text-decoration: none;
+	padding: .2em .5em;
+	border-radius: .1em;
+	transition: all .3s ease-in-out;
+
+}
+
+.links__repo:hover{
+
+	background: var(--main-color);
+	color: #fff;
+	text-decoration: none;
+	border-radius: .5em;
+
+
+}
+
+
+
 .ProjectSection__Project:hover .ProjectSection__Desc{
 
-	top: 30%;
+	/* top: 30%; */
+	transform: translateY(300%);
 
 
 }
 
 .ProjectSection__Project:hover .ProjectSection__Title{
 
-	right: 70%;
+	/* right: 70%; */
+	transform: translateX(0%);
 
 
 }
@@ -113,6 +154,7 @@
 .ProjectSection__Project:hover .ProjectSection__Img{
 
 	opacity: 0.25;
+	filter: blur(2px);
 
 
 }

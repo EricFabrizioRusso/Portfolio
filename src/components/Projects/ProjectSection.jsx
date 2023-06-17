@@ -2,23 +2,23 @@ import React, {useState} from 'react';
 import ProjectStyles from './Projects.module.css';
 
 
-const ProjectSection = ({title,desc,image}) => {
+const ProjectSection = ({title,des,image,live,repo}) => {
 
 
 
 
   return (
     <div className={ProjectStyles.ProjectSection}>
-        <a href='' className={ProjectStyles.ProjectSection__Project}>
-          <h2 className={ProjectStyles.ProjectSection__Title}>Title</h2>
-          <img className={ProjectStyles.ProjectSection__Img} src="" alt="" />
+        <a href={live} className={ProjectStyles.ProjectSection__Project} target="_blank">
+          <h2 className={ProjectStyles.ProjectSection__Title}>{title}</h2>
+          <img className={ProjectStyles.ProjectSection__Img} src={image} alt="" />
           <p className={ProjectStyles.ProjectSection__Desc}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Assumenda suscipit quas iure iusto vero ab laudantium
-            quaerat quidem veritatis obcaecati quasi nihil itaque,
-            cum harum enim magnam ad sed aliquam.
+            {des}
           </p>
         </a>
+        <div className={ProjectStyles.ProjectSection__links}>
+           <a href={repo} className={ProjectStyles.links__repo} target="_blank">Repository</a>
+        </div>
       
     </div>
   )

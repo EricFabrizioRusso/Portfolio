@@ -137,10 +137,11 @@ const About = () => {
         <div className={`${AboutStyles.MyStack} ${AboutStyles.MyStack_active}`} id='MyStack'>
       
             <p className={AboutStyles.MyStack__Desc}>
-            {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit iusto quasi reiciendis
-            ea minus, reprehenderit nesciunt eos maxime modi nostrum esse deserunt quam libero
-            voluptas voluptate nobis ipsam ad cum. */}
-            A long the way i started to learning markup and style languages
+            My beginning, like that of most people, started with markup and styling languages.<br></br> 
+            My first step into the programming world was with JavaScript,
+            and I continued my learning journey with React,
+            focusing on topics like hooks, useState, useEffect, and routers.
+            <br></br>Currently, I'm expanding my knowledge in JavaScript backend development, including Node.js, the Express framework, and MongoDB.
             
             </p>
             <div className={AboutStyles.MyStack__Container}>
@@ -165,9 +166,7 @@ const About = () => {
         <div className={AboutStyles.Tools} id='Tools'>
       
             <p className={AboutStyles.Tools__Desc}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit iusto quasi reiciendis
-              ea minus, reprehenderit nesciunt eos maxime modi nostrum esse deserunt quam libero
-              voluptas voluptate nobis ipsam ad cum.
+            I can combine all my knowledge in web development with external tools that I use for design in other areas.
             </p>
 
             <div className={AboutStyles.Tools__Container}>

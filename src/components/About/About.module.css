@@ -62,7 +62,7 @@
     border-radius: .5em;
     padding: 0 2em;
     margin: 0 2em;
-
+    
     
 
     box-shadow: 0 1em 2em rgba(0, 0, 0, 0.74);
@@ -81,12 +81,15 @@
     flex-direction: row;
     gap: 1em;
     margin: 2em;
+    
 
 
 }
+
 .MyStack__Desc{
 
     margin: 1em;
+    line-height: 1.5em;
 
     
 
@@ -115,6 +118,7 @@
 .Tools__Desc{
 
     margin: 1em;
+    line-height: 1.5em;
    
 
 }

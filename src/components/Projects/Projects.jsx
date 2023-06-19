@@ -11,7 +11,7 @@ const Projects = () => {
 
       title: 'Hobbies',
 
-      background: '/galleryBackground.png',
+      background: 'galleryBackground.png',
 
       description:'A gallery that includes external works, unrelated to the code',
 

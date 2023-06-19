@@ -16,7 +16,7 @@ const Header = () => {
              in conjuction with a good understanding of web design principles,
             allows me to create work with creativity and improving my skills. </p>
           <div className={hstyles.Header__Box_image} id='image'>
-              <img className='Header__image' src="" alt="My-Photo" />
+              <img className={hstyles.Header__image} src="portfolioPhotos.jpg" alt="My-Photo" loading='lazy' />
           </div>
   
         </div>

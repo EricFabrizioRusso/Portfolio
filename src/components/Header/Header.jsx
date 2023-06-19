@@ -21,7 +21,7 @@ const Header = () => {
   
         </div>
         <div className={hstyles.Social}>
-            <a className={hstyles.Resume} href={ResumeLink} download >Resume
+            <a className={hstyles.Resume} href='https://ericrusso-resume.netlify.app/' target='_blank' rel="noopener noreferrer">Resume
             <img className={hstyles.Resume__Icon} src={ICONS.ArrowDown} alt="Resume" loading='lazy'/>
             </a>
             <a className={hstyles.Social__Icon}  href="https://github.com/EricFabrizioRusso" target='_blank' rel="noopener noreferrer">

@@ -30,6 +30,8 @@ const Contact = () => {
   const [response, setResponse] = useState(false);
   const [error, setError] = useState(false);
 
+  //https://formsubmit.co/ajax/erickfernusg1@gmail.com
+
  const handleSubmit= async (e)=>{
 
    e.preventDefault();
@@ -60,6 +62,7 @@ const Contact = () => {
   }catch(err){
 
     setError(true)
+    setLoading(false)
     setTimeout(() => {
 
       setError(false)
@@ -89,7 +92,7 @@ const Contact = () => {
         <p className={ContactStyles.Contact__Des}>Feel free to contact me for job opportunities
         using my social links on the top of the page, or fill in this form that
         I've built and I will get back at you as soon as possible.</p>
-        <form target='_blank' className={ContactStyles.Contact__form} method='post' onSubmit={handleSubmit}>
+        <form target='_blank' className={ContactStyles.Contact__form} method='post' action='7d88f26437812b76cee087be9fd1755a' onSubmit={handleSubmit}>
             <label className={ContactStyles.form__label} htmlFor='Name'>Name</label>
             <input className={ContactStyles.form__input} type="text" id='Name' name='name' placeholder="John Doe" autoComplete='Unknown' onChange={handleChange} value={form.name} required/>
             <label className={ContactStyles.form__label} htmlFor="email">E-mail</label>

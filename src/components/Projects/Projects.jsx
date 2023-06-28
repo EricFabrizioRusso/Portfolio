@@ -21,6 +21,22 @@ const Projects = () => {
 
     }
 
+    const weatherApp={
+
+      title: 'Weather App',
+
+      background: 'ScreeshotWeatherApp.png',
+
+      description:'In this application, you can access the weather conditions of a city.',
+
+      live:'https://eric-russo-weatherapp.netlify.app/',
+
+      repo:'https://github.com/EricFabrizioRusso/WeatherApp'
+
+    }
+
+
+
   return (
     <div className={ProjectStyles.Projects} id='Projects'>
       <h1 className={ProjectStyles.Projects__Title}>Projects</h1>
@@ -33,6 +49,13 @@ const Projects = () => {
         image={gallery.background}
         live={gallery.live}
         repo={gallery.repo}
+        />
+        <ProjectSection
+        title={weatherApp.title} 
+        des={weatherApp.description} 
+        image={weatherApp.background}
+        live={weatherApp.live}
+        repo={weatherApp.repo}
         />
       
 

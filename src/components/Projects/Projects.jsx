@@ -27,7 +27,7 @@ const Projects = () => {
 
       background: 'ScreeshotWeatherApp.png',
 
-      description:'In this application, you can access the weather conditions of a city.',
+      description:'In this application, you can access the weather conditions for a city.',
 
       live:'https://eric-russo-weatherapp.netlify.app/',
 

@@ -13,7 +13,7 @@ const Projects = () => {
 
       background: 'galleryBackground.png',
 
-      description:'A gallery that includes external works, unrelated to the code',
+      description:'A gallery that includes external works, unrelated to code',
 
       live:'https://ericrusso-gallery.netlify.app/',
 
@@ -34,6 +34,22 @@ const Projects = () => {
       repo:'https://github.com/EricFabrizioRusso/WeatherApp'
 
     }
+
+    const colorGame={
+
+      title: 'Select the color of the word',
+
+      background: 'colorBackground.png',
+
+      description:'In this application, you have to select the color of the word before time runs out.',
+
+      live:'https://64b4942dbd75e915cfdefe14--selectcolorgame.netlify.app/',
+
+      repo:'https://github.com/EricFabrizioRusso/SelectColorGame'
+
+    }
+
+
 
 
 
@@ -56,6 +72,13 @@ const Projects = () => {
         image={weatherApp.background}
         live={weatherApp.live}
         repo={weatherApp.repo}
+        />
+           <ProjectSection
+        title={colorGame.title} 
+        des={colorGame.description} 
+        image={colorGame.background}
+        live={colorGame.live}
+        repo={colorGame.repo}
         />
       
 

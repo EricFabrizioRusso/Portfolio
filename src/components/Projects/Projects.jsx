@@ -48,6 +48,21 @@ const Projects = () => {
       repo:'https://github.com/EricFabrizioRusso/SelectColorGame'
 
     }
+    const gameLibrary={
+
+      title: 'MPGames',
+
+      background: 'mpGames.png',
+
+      description:'A library where you have access to the catalog of multiplayer games separated by category.',
+
+      live:'https://gamelibrarymp.netlify.app/',
+
+      repo:'https://github.com/EricFabrizioRusso/GameLibrary'
+
+    }
+
+    
 
 
 
@@ -79,6 +94,13 @@ const Projects = () => {
         image={colorGame.background}
         live={colorGame.live}
         repo={colorGame.repo}
+        />
+           <ProjectSection
+        title={gameLibrary.title} 
+        des={gameLibrary.description} 
+        image={gameLibrary.background}
+        live={gameLibrary.live}
+        repo={gameLibrary.repo}
         />
       
 

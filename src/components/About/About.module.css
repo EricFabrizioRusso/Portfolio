@@ -78,7 +78,8 @@
 .MyStack__Container{
 
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
     gap: 1em;
     margin: 2em;
     
@@ -250,6 +251,22 @@
        
     
     
+    }
+
+    .MyStack__Container{
+
+  
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .MyStack__Container > div{
+
+        width: 50px;
+
+        margin: 0 .5em;
+
     }
    
     

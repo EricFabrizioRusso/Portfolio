@@ -3,6 +3,8 @@ import HtmlLogo from '/icons8-html-5.svg';
 import CssLogo from '/icons8-css3.svg';
 import JSLogo from '/icons8-javascript.svg';
 import ReactJS from '/icons8-react.svg';
+import NodeJs from '/icons8-nodejs.svg';
+import SQL from '/icons8-sql-100.png';
 
 //Tools
 import NpmLogo from '/icons8-npm.svg';
@@ -31,6 +33,8 @@ const LOGOS={
     Css: CssLogo,
     JavaScript: JSLogo,
     ReactJS: ReactJS,
+    NodeJs:NodeJs,
+    SQL: SQL,
 
 
     Npm: NpmLogo,

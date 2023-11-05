@@ -21,8 +21,11 @@ const languges=[
   <img src={LOGOS.Css} className={AboutStyles.About__logo} alt="CSS" />,
   <img src={LOGOS.JavaScript} className={AboutStyles.About__logo} alt="JS" />,
   <img src={LOGOS.ReactJS} className={AboutStyles.About__logo} alt="ReactJS" />,
+  <img src={LOGOS.BOOTSTRAP} className={AboutStyles.About__logo} alt="Bootstrap" />,
   <img src={LOGOS.NodeJs} className={AboutStyles.About__logo} alt="NodeJs" />,
   <img src={LOGOS.SQL} className={AboutStyles.About__logo} alt="SQL" />,
+  <img src={LOGOS.EX} className={AboutStyles.About__logo} alt="EX" />,
+  <img src={LOGOS.MONGODB} className={AboutStyles.About__logo} alt="Mongo" />,
 
 
     

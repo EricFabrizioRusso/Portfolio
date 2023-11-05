@@ -22,6 +22,9 @@ import HomeIcon from '/icons8-home-50.png';
 import PersonIcon from '/icons8-person-50.png';
 import SuitcaseIcon from '/icons8-suitcase-50.png';
 import MessagesIcon from '/icons8-messages-50.png';
+import ExpressLogo from '/expressjs-ar21.svg';
+import MongoLogo from '/mongodb-ar21.svg';
+import BootstrapLogo from '/icons8-bootstrap.svg';
 
 
 //Imagenes
@@ -35,6 +38,9 @@ const LOGOS={
     ReactJS: ReactJS,
     NodeJs:NodeJs,
     SQL: SQL,
+    EX:ExpressLogo,
+    MONGODB:MongoLogo,
+    BOOTSTRAP: BootstrapLogo,
 
 
     Npm: NpmLogo,

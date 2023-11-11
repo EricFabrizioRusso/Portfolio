@@ -61,6 +61,19 @@ const Projects = () => {
       repo:'https://github.com/EricFabrizioRusso/GameLibrary'
 
     }
+    const taskApp={
+
+      title: 'ToDoList',
+
+      background: 'bgtasks.png',
+
+      description:'You can register in the app and create, update and delete your tasks.',
+
+      live:'https://taskapp-frontend-production.up.railway.app/',
+
+      repo:'https://github.com/EricFabrizioRusso/TasksApp'
+
+    }
 
     
 
@@ -101,6 +114,13 @@ const Projects = () => {
         image={gameLibrary.background}
         live={gameLibrary.live}
         repo={gameLibrary.repo}
+        />
+           <ProjectSection
+        title={taskApp.title} 
+        des={taskApp.description} 
+        image={taskApp.background}
+        live={taskApp.live}
+        repo={taskApp.repo}
         />
       
 

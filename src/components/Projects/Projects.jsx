@@ -43,7 +43,7 @@ const Projects = () => {
 
       description:'In this application, you have to select the color of the word before time runs out.',
 
-      live:'https://64b4942dbd75e915cfdefe14--selectcolorgame.netlify.app/',
+      live:'https://selectcolorgame.netlify.app/',
 
       repo:'https://github.com/EricFabrizioRusso/SelectColorGame'
 
